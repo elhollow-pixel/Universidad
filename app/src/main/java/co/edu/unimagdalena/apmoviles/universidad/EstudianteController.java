@@ -67,6 +67,30 @@ public class EstudianteController {
         }
     }
 
+    public void Mod(String co,String n,String p){
+        try{
+            SQLiteDatabase sql = bd.getWritableDatabase();
+            ContentValues v= new ContentValues();
+            v.put("nombre",n);
+            v.put("programa",p);
+            String a[] = new String[]{co};
+            long BD = sql.update(DefBD.tabla_est,v,"codigo=?",a);
+            Toast.makeText(c, "El estudiante se a Modificado", Toast.LENGTH_SHORT).show();
+        }catch (Exception E){
+            Toast.makeText(c,"Error consulta",Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void Elim(String co){
+        try{
+            SQLiteDatabase sql = bd.getWritableDatabase();
+            String a[] = new String[]{co};
+            long BD = sql.delete(DefBD.tabla_est,"codigo=?",a);
+            Toast.makeText(c, "El Estudiante se a Eliminado", Toast.LENGTH_SHORT).show();
+        }catch (Exception E){
+            Toast.makeText(c,"Error consulta",Toast.LENGTH_LONG).show();
+        }
+
+    }
+
    }
-
-

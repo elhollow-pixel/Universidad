@@ -6,4 +6,6 @@
     <string name="guardar">Guardar</string>
     <string name="cancelar">CANCELAR</string>
     <string name="listado">LISTADO</string>
+    <string name="modificar">Modificar</string>
+    <string name="Elimi">Eliminar</string>
 </resources>
