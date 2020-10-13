@@ -7,8 +7,29 @@
     android:orientation="vertical"
     tools:context=".ListadoActivity">
 
-    <ListView
-        android:id="@+id/lstlistado"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/lstlistado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/agregar" />
+    </LinearLayout>
+
 </LinearLayout>

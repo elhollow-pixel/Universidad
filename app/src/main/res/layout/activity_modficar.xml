@@ -27,7 +27,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.5"
+        android:layout_weight="0.4"
         android:orientation="vertical">
 
         <TextView
@@ -49,33 +49,33 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/nombre"
             android:layout_marginTop="20dp"
+            android:text="@string/nombre"
             android:textSize="30sp" />
 
         <EditText
             android:id="@+id/txtEnom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:layout_marginTop="10dp"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/programa"
             android:layout_marginTop="20dp"
+            android:text="@string/programa"
             android:textSize="30sp" />
 
         <EditText
             android:id="@+id/txtEprom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:layout_marginTop="10dp"
+            android:ems="10"
             android:inputType="textPersonName"
             android:textSize="24sp" />
 
@@ -83,7 +83,7 @@
             android:id="@+id/btnMod"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
             android:text="@string/modificar" />
 
         <Button
